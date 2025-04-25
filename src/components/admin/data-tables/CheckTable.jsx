@@ -1,7 +1,7 @@
 import React from 'react';
-import CardMenu from 'components/card/CardMenu';
-import Checkbox from 'components/checkbox';
-import Card from 'components/card';
+import CardMenu from '@/components/card/CardMenu';
+import Checkbox from '@/components/checkbox';
+import Card from '@/components/card';
 
 import {
   createColumnHelper,
@@ -33,7 +33,7 @@ function CheckTable(props = { tableData }) {
         <div className="flex items-center">
           <Checkbox
             defaultChecked={info.getValue()[1]}
-            colorScheme="brandScheme"
+            color="indigo"
             me="10px"
           />
           <p className="ml-3 text-sm font-bold text-navy-700 dark:text-white">

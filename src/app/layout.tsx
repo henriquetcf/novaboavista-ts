@@ -1,5 +1,5 @@
 import localFont from "next/font/local";
-import "./globals.css";
+import "@/app/globals.css";
 import AuthProvider from "@/components/AuthProvider/AuthProvider";
 
 const geistSans = localFont({
@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-gray-100 dark:bg-gray-900 light">
+    <html suppressHydrationWarning>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-100 text-foreground dark:bg-gray-900`}
         >
